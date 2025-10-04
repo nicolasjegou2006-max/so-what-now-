@@ -60,23 +60,23 @@
         }
 
         .top-left {
-            top: 20px;
-            left: 20px;
+            top: 10%;
+            left: 5%;
         }
 
         .top-right {
-            top: 20px;
-            right: 20px;
+            top: 10%;
+            right: 5%;
         }
 
         .bottom-left {
-            bottom: 20px;
-            left: 20px;
+            bottom: 30%;
+            left: 5%;
         }
 
         .bottom-right {
-            bottom: 20px;
-            right: 20px;
+            bottom: 30%;
+            right: 5%;
         }
 
         .main-box {
@@ -95,6 +95,12 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 1;
+        }
+
+        @media (max-width: 768px) {
+            .bottom-left, .bottom-right {
+                bottom: 20%;
+            }
         }
     </style>
 </head>
