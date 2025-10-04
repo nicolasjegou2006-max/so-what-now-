@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>So What Now</title>
+    <style>
+        body {
+            background-color: #FF91AF;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background-image:
+                repeating-linear-gradient(0deg, transparent, transparent 20px, rgba(255, 255, 255, 0.3) 20px),
+                repeating-linear-gradient(90deg, transparent, transparent 20px, rgba(255, 255, 255, 0.3) 20px, rgba(255, 255, 255, 0.3) 40px);
+            background-size: 40px 40px;
+        }
+
+        body::before {
+            content: "303";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 40px);
+            grid-auto-rows: 40px;
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.3);
+            pointer-events: none;
+            z-index: 0;
+            align-content: start;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        .box {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+            min-width: 150px;
+            backdrop-filter: blur(5px);
+            z-index: 1;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+        }
+
+        .top-left {
+            top: 20px;
+            left: 20px;
+        }
+
+        .top-right {
+            top: 20px;
+            right: 20px;
+        }
+
+        .bottom-left {
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .bottom-right {
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .main-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: black;
+            max-width: 400px;
+            backdrop-filter: blur(5px);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <a href="kobe.html" class="box top-left">kobe</a>
+    <a href="giv3_m3_a_way.html" class="box top-right">giv3 m3 a way</a>
+    <a href="ma_chérie.html" class="box bottom-left">ma chérie</a>
+    <a href="dommage_et_damages.html" class="box bottom-right">dommage&amp;damages</a>
+    <div class="main-box">
+        so what now ?<br>
+        <span style="font-size: 18px;">sortie : 10/10/25</span>
+    </div>
+</body>
+</html>
