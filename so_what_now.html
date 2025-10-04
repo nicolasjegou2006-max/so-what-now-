@@ -6,7 +6,7 @@
     <title>So What Now</title>
     <style>
         body {
-            background-color: #FF91AF;
+            background-color: #ffa8de;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -16,47 +16,27 @@
             align-items: center;
             position: relative;
             overflow: hidden;
-            background-image:
-                repeating-linear-gradient(0deg, transparent, transparent 20px, rgba(255, 255, 255, 0.3) 20px),
-                repeating-linear-gradient(90deg, transparent, transparent 20px, rgba(255, 255, 255, 0.3) 20px, rgba(255, 255, 255, 0.3) 40px);
-            background-size: 40px 40px;
-        }
-
-        body::before {
-            content: "303";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, 40px);
-            grid-auto-rows: 40px;
-            font-size: 20px;
-            color: rgba(255, 255, 255, 0.3);
-            pointer-events: none;
-            z-index: 0;
-            align-content: start;
-            line-height: 40px;
-            text-align: center;
+            touch-action: manipulation;
         }
 
         .box {
             position: absolute;
             background-color: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
-            padding: 15px;
+            padding: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
-            font-size: 18px;
+            font-size: 14px;
             font-weight: bold;
             color: black;
-            min-width: 150px;
+            min-width: 100px;
+            width: auto;
             backdrop-filter: blur(5px);
             z-index: 1;
             cursor: pointer;
             text-decoration: none;
             display: block;
+            max-width: 120px;
         }
 
         .top-left {
@@ -70,25 +50,25 @@
         }
 
         .bottom-left {
-            bottom: 30%;
+            bottom: 25%;
             left: 5%;
         }
 
         .bottom-right {
-            bottom: 30%;
+            bottom: 25%;
             right: 5%;
         }
 
         .main-box {
             background-color: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
-            padding: 30px;
+            padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
-            font-size: 28px;
+            font-size: 22px;
             font-weight: bold;
             color: black;
-            max-width: 400px;
+            max-width: 280px;
             backdrop-filter: blur(5px);
             position: absolute;
             top: 50%;
@@ -101,6 +81,14 @@
             .bottom-left, .bottom-right {
                 bottom: 20%;
             }
+            .box {
+                font-size: 12px;
+                min-width: 80px;
+            }
+            .main-box {
+                font-size: 18px;
+                padding: 15px;
+            }
         }
     </style>
 </head>
@@ -111,7 +99,7 @@
     <a href="dommage_et_damages.html" class="box bottom-right">dommage&amp;damages</a>
     <div class="main-box">
         so what now ?<br>
-        <span style="font-size: 18px;">sortie : 10/10/25</span>
+        <span style="font-size: 16px;">sortie : 10/10/25</span>
     </div>
 </body>
 </html>
