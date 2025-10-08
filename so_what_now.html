@@ -1,119 +1,117 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>So What Now</title>
-    <style>
-        body {
-            background-color: #ffa8de;
-            background-image: url('https://mistralaichatupprodswe.blob.core.windows.net/chat-images/39/fe/ae/39feae35-fbe8-496e-b6fd-daab3311805c/5e0ff32c-927e-4faa-bd31-621aa60cb213/6b202f41-fa4b-4141-a9fd-72652d703730');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 168, 222, 0.7);
-            z-index: 0;
-        }
-
-        .box {
-            position: absolute;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
-            padding: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            font-size: 14px;
-            font-weight: bold;
-            color: black;
-            min-width: 100px;
-            width: auto;
-            backdrop-filter: blur(5px);
-            z-index: 1;
-            cursor: pointer;
-            text-decoration: none;
-            display: block;
-            max-width: 120px;
-        }
-
-        .top-left {
-            top: 10%;
-            left: 5%;
-        }
-
-        .top-right {
-            top: 10%;
-            right: 5%;
-        }
-
-        .bottom-left {
-            bottom: 25%;
-            left: 5%;
-        }
-
-        .bottom-right {
-            bottom: 25%;
-            right: 5%;
-        }
-
-        .main-box {
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            font-size: 22px;
-            font-weight: bold;
-            color: black;
-            max-width: 280px;
-            backdrop-filter: blur(5px);
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 1;
-        }
-
-        @media (max-width: 768px) {
-            .bottom-left, .bottom-right {
-                bottom: 20%;
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>So What Now</title>
+        <style>
+            body {
+                background-color: #ffa8de;
+                background-image: url('background.png');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow-x: hidden;
+                position: relative;
+                color: white;
             }
-            .box {
-                font-size: 12px;
-                min-width: 80px;
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 168, 222, 0.6);
+                z-index: 0;
             }
-            .main-box {
+
+            .link-container {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                box-sizing: border-box;
+                padding: 20px;
+                z-index: 2;
+            }
+
+            .top-links, .bottom-links {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                max-width: 800px;
+                padding: 10px;
+            }
+
+            .link-box {
+                background: rgba(255, 255, 255, 0.85);
+                padding: 12px 24px;
+                border-radius: 25px;
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
                 font-size: 18px;
-                padding: 15px;
+                margin: 10px;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             }
-        }
-    </style>
-</head>
-<body>
-    <div class="overlay"></div>
-    <a href="kobe.html" class="box top-left">kobe</a>
-    <a href="giv3_m3_a_way.html" class="box top-right">giv3 m3 a way</a>
-    <a href="ma_chérie.html" class="box bottom-left">ma chérie</a>
-    <a href="dommage_et_damages.html" class="box bottom-right">dommage&amp;damages</a>
-    <div class="main-box">
-        so what now ?<br>
-        <span style="font-size: 16px;">sortie : 10/10/25</span>
-    </div>
-</body>
+
+            .link-box:hover {
+                background: rgba(255, 255, 255, 1);
+                transform: translateY(-2px);
+                box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+            }
+
+            .center-message {
+                background: rgba(255, 255, 255, 0.9);
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                font-size: 18px;
+                color: #333;
+                margin: 20px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            @media (max-width: 768px) {
+                .top-links, .bottom-links {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .link-box {
+                    font-size: 16px;
+                    padding: 10px 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="overlay"></div>
+        <div class="link-container">
+            <div class="top-links">
+                <a href="kobe.html" class="link-box">kobe</a>
+                <a href="giv3_m3_a_way.html" class="link-box">giv3 m3 a way</a>
+            </div>
+            <div class="center-message">
+                so what now ?<br>
+           </div>
+            <div class="bottom-links">
+                <a href="ma_chérie.html" class="link-box">ma chérie</a>
+                <a href="dommage_et_damages.html" class="link-box">dommage&damages</a>
+            </div>
+        </div>
+    </body>
 </html>
