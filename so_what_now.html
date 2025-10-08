@@ -7,6 +7,10 @@
     <style>
         body {
             background-color: #ffa8de;
+            background-image: url('https://mistralaichatupprodswe.blob.core.windows.net/chat-images/39/fe/ae/39feae35-fbe8-496e-b6fd-daab3311805c/5e0ff32c-927e-4faa-bd31-621aa60cb213/6b202f41-fa4b-4141-a9fd-72652d703730');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -16,7 +20,16 @@
             align-items: center;
             position: relative;
             overflow: hidden;
-            touch-action: manipulation;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 168, 222, 0.7);
+            z-index: 0;
         }
 
         .box {
@@ -93,6 +106,7 @@
     </style>
 </head>
 <body>
+    <div class="overlay"></div>
     <a href="kobe.html" class="box top-left">kobe</a>
     <a href="giv3_m3_a_way.html" class="box top-right">giv3 m3 a way</a>
     <a href="ma_chérie.html" class="box bottom-left">ma chérie</a>
