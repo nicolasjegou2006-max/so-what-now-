@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kobe</title>
+        <style>
+            body {
+                background-color: #ffa8de;
+                background-image: url('background.png');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: white;
+                font-size: 16px;
+                line-height: 1.5;
+                position: relative;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 168, 222, 0.7);
+                z-index: 0;
+            }
+
+            .content {
+                position: relative;
+                z-index: 2;
+                max-width: 800px;
+                padding: 20px;
+                background: rgba(0, 0, 0, 0.5);
+                border-radius: 10px;
+                text-align: center;
+            }
+
+            .button {
+                background-color: rgba(255, 255, 255, 0.8);
+                color: black;
+                border: none;
+                border-radius: 25px;
+                padding: 10px 20px;
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer;
+                text-decoration: none;
+                display: inline-block;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: background-color 0.3s;
+                margin-top: 20px;
+            }
+
+            .button:hover {
+                background-color: rgba(255, 255, 255, 1);
+            }
+
+            @media (max-width: 768px) {
+                body {
+                    font-size: 14px;
+                    padding: 15px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="overlay"></div>
+        <div class="content">
+            <h1 style="font-size: 20px; color: white;">dommage&amp;damages (prod ilvn)</h1>
+            <p>un peu plus spécial celui-là, je l’ai écrit quand j’avais la rage en gros et ça sortait tellement bien que je ne pouvais pas le laisser sur mon Cloud. C’est probablement celui que je préfère dans l’EP et c’est aussi celui qui conclut ce projet.</p>
+            <a href="so_what_now.html" class="button">retour</a>
+        </div>
+    </body>
+</html>
